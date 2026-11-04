@@ -11,5 +11,4 @@ Thumbs.db
 .vscode/
 tmp/
 data/_repro_*/
-data/full.db
 exports/full/
