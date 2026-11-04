@@ -1,0 +1,11 @@
+intent_id,name,keywords,default_priority,default_queue_id,is_safety
+BILLING_DISPUTE,Billing dispute,"[""charged twice"", ""double charged"", ""incorrect charge"", ""billing error"", ""overcharged""]",MEDIUM,Q-BILLING,0
+PAYMENT_FAILED,Payment failed,"[""payment failed"", ""card declined"", ""payment was declined"", ""transaction failed""]",MEDIUM,Q-BILLING,0
+PASSWORD_RESET,Password reset,"[""reset my password"", ""forgot password"", ""password reset"", ""reset link""]",LOW,Q-ACCOUNT,0
+LOGIN_ISSUE,Login issue,"[""cannot log in"", ""can't log in"", ""locked out"", ""login error"", ""two-factor""]",MEDIUM,Q-ACCOUNT,0
+TECH_FAULT,Technical fault,"[""stopped working"", ""error code"", ""crashes"", ""firmware"", ""won't turn on"", ""device fault""]",MEDIUM,Q-TECH,0
+DELIVERY_STATUS,Delivery status,"[""where is my order"", ""delivery delayed"", ""tracking"", ""not delivered"", ""package""]",LOW,Q-LOGISTICS,0
+REFUND_REQUEST,Refund request,"[""refund"", ""money back"", ""return my order""]",MEDIUM,Q-BILLING,0
+CANCELLATION,Cancellation,"[""cancel my subscription"", ""cancel my account"", ""close my account"", ""cancellation""]",MEDIUM,Q-RETENTION,0
+PRODUCT_SAFETY,Product safety incident,"[""overheating"", ""smoke"", ""caught fire"", ""sparks"", ""burn"", ""electric shock"", ""melted"", ""exploded""]",CRITICAL,Q-SAFETY,1
+GENERAL_QUERY,General query,"[""question"", ""information"", ""how do i"", ""opening hours"", ""feedback""]",LOW,Q-GENERAL,0

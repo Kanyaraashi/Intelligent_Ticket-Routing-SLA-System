@@ -1,0 +1,6 @@
+anomaly_id,related_record_id,issue_type,description,severity,expected_detection,expected_decision
+ANOM-001,TKT-2026-000105,TRANSFER_LOOP,Ticket transferred back to AGT-000046 after passing through other agents.,HIGH,Repeated agent in transfer chain,Flag for supervisor review; block further transfers
+ANOM-002,ASN-TKT-2026-022712-002,CAPACITY_EXCEEDED,Agent AGT-000001 (limit 5) was assigned 6 simultaneous tickets.,HIGH,Concurrent assignments exceed agent max_concurrent,Reject assignment; re-route to an agent with spare capacity
+ANOM-003,TKT-2026-000001,SLA_IGNORES_CALENDAR,"Deadlines computed as created_at + target hours, ignoring the EMAIL business calendar.",HIGH,Recomputed calendar deadline differs from stored deadline,Recalculate SLA with channel calendar
+ANOM-004,TKT-2026-000031,REOPEN_HISTORY_LOST,First resolution record was deleted when the ticket was reopened.,HIGH,Resolution cycles not contiguous / fewer than lifecycle RESOLVED events,Restore resolution history from audit trail
+ANOM-005,TKT-2026-000041,SAFETY_PRIORITY_VIOLATION,Ticket describes overheating/smoke/fire but was stored with priority LOW.,CRITICAL,Safety keyword present and priority != CRITICAL,Escalate to CRITICAL and Safety queue immediately

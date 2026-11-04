@@ -1,0 +1,39 @@
+{
+  "mode": "full",
+  "seed": 20261022,
+  "row_counts_identical": true,
+  "ids_identical": true,
+  "table_checksums_identical": true,
+  "export_checksums_identical": true,
+  "ground_truth_identical": true,
+  "record_counts": {
+    "language": 6,
+    "channel": 3,
+    "skill": 7,
+    "queue": 7,
+    "intent": 10,
+    "intent_skill": 11,
+    "priority_rule": 14,
+    "sla_policy": 12,
+    "holiday": 3,
+    "agent": 100,
+    "agent_skill": 196,
+    "agent_language": 165,
+    "agent_shift": 600,
+    "customer": 11000,
+    "ticket": 30000,
+    "ticket_status_history": 216092,
+    "message": 100000,
+    "assignment_event": 52182,
+    "sla_event": 147469,
+    "resolution": 31653
+  },
+  "tables_compared": 20,
+  "export_files_compared": 40,
+  "excluded_from_determinism_checks": [
+    "generation_timestamp_utc",
+    "SQLite file bytes (page layout)",
+    "runtime seconds"
+  ],
+  "REPRODUCIBLE": true
+}

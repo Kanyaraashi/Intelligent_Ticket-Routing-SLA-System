@@ -1,0 +1,9 @@
+{
+  "seed": 20261022,
+  "generator_version": "1.0.0",
+  "start_date": "2026-07-01",
+  "modes": {
+    "starter": {"tickets": 500,   "agents": 20,  "messages": 2000,   "days": 7,  "customers": 220,  "spikes": 1, "incidents": 1},
+    "full":    {"tickets": 30000, "agents": 100, "messages": 100000, "days": 90, "customers": 11000, "spikes": 6, "incidents": 3}
+  }
+}

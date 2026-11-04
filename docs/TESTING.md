@@ -1,0 +1,5 @@
+# Testing
+Run `RUN_TESTS.bat` (or `python -m pytest -v`). Tests use hand-built small fixtures (SLA, routing) plus a 500-ticket starter dataset generated in a temp folder; the full dataset is never needed.
+Coverage: deterministic IDs, FKs, 13 entities, skills, languages, capacity, shifts (incl. overnight), no-agent exception, business calendars, weekends, holidays, after-hours, pause/resume, escalation, lifecycle, reopening history, transfer-loop prevention, priority/safety rules, anomaly detection (5/5), ground-truth separation, metrics from DB, reproducibility.
+Additional evidence scripts: `validate_data.py`, `check_reproducibility.py`, `run_routing_simulation.py`, `smoke_test_dashboard.py` (renders all 9 pages on both datasets). Actual results are in `FINAL_ACCEPTANCE_REPORT.md` and `docs/VALIDATION_REPORT.md`.
+Bugs found by testing and fixed during development: (1) transfers could route back to the same agent; (2) exclusion set reset on reopen caused cross-cycle loops (found only by full-dataset validation); (3) SLA pauses from reopened cycles leaked into deadline recomputation; (4) dashboard SQLite connection used across threads.

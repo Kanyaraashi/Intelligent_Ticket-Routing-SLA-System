@@ -1,0 +1,47 @@
+[
+  {
+    "anomaly_id": "ANOM-001",
+    "related_record_id": "TKT-2026-000105",
+    "issue_type": "TRANSFER_LOOP",
+    "description": "Ticket transferred back to AGT-000046 after passing through other agents.",
+    "severity": "HIGH",
+    "expected_detection": "Repeated agent in transfer chain",
+    "expected_decision": "Flag for supervisor review; block further transfers"
+  },
+  {
+    "anomaly_id": "ANOM-002",
+    "related_record_id": "ASN-TKT-2026-022712-002",
+    "issue_type": "CAPACITY_EXCEEDED",
+    "description": "Agent AGT-000001 (limit 5) was assigned 6 simultaneous tickets.",
+    "severity": "HIGH",
+    "expected_detection": "Concurrent assignments exceed agent max_concurrent",
+    "expected_decision": "Reject assignment; re-route to an agent with spare capacity"
+  },
+  {
+    "anomaly_id": "ANOM-003",
+    "related_record_id": "TKT-2026-000001",
+    "issue_type": "SLA_IGNORES_CALENDAR",
+    "description": "Deadlines computed as created_at + target hours, ignoring the EMAIL business calendar.",
+    "severity": "HIGH",
+    "expected_detection": "Recomputed calendar deadline differs from stored deadline",
+    "expected_decision": "Recalculate SLA with channel calendar"
+  },
+  {
+    "anomaly_id": "ANOM-004",
+    "related_record_id": "TKT-2026-000031",
+    "issue_type": "REOPEN_HISTORY_LOST",
+    "description": "First resolution record was deleted when the ticket was reopened.",
+    "severity": "HIGH",
+    "expected_detection": "Resolution cycles not contiguous / fewer than lifecycle RESOLVED events",
+    "expected_decision": "Restore resolution history from audit trail"
+  },
+  {
+    "anomaly_id": "ANOM-005",
+    "related_record_id": "TKT-2026-000041",
+    "issue_type": "SAFETY_PRIORITY_VIOLATION",
+    "description": "Ticket describes overheating/smoke/fire but was stored with priority LOW.",
+    "severity": "CRITICAL",
+    "expected_detection": "Safety keyword present and priority != CRITICAL",
+    "expected_decision": "Escalate to CRITICAL and Safety queue immediately"
+  }
+]

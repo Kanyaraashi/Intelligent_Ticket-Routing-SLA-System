@@ -1,0 +1,8 @@
+queue_id,name,primary_skill_id,is_active
+Q-BILLING,Billing Queue,BILLING,1
+Q-TECH,Technical Queue,TECHNICAL,1
+Q-ACCOUNT,Account Queue,ACCOUNT,1
+Q-LOGISTICS,Logistics Queue,LOGISTICS,1
+Q-RETENTION,Retention Queue,RETENTION,1
+Q-SAFETY,Safety Incident Queue,SAFETY,1
+Q-GENERAL,General Queue,GENERAL,1

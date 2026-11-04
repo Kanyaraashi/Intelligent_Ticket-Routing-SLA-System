@@ -1,0 +1,1 @@
+[{"channel_id":"EMAIL","name":"Email","work_days":"0,1,2,3,4","open_min_utc":480,"close_min_utc":1080},{"channel_id":"CHAT","name":"Live chat","work_days":"0,1,2,3,4,5","open_min_utc":360,"close_min_utc":1320},{"channel_id":"PHONE","name":"Phone","work_days":"0,1,2,3,4","open_min_utc":420,"close_min_utc":1140}]

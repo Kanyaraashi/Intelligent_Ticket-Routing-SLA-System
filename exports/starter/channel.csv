@@ -1,0 +1,4 @@
+channel_id,name,work_days,open_min_utc,close_min_utc
+EMAIL,Email,"0,1,2,3,4",480,1080
+CHAT,Live chat,"0,1,2,3,4,5",360,1320
+PHONE,Phone,"0,1,2,3,4",420,1140
