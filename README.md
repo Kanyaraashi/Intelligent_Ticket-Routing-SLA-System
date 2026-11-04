@@ -2,6 +2,21 @@
 
 Routes customer cases from **email, chat and phone** to the right agent using explainable rules (intent, priority, language, skills, shifts, capacity, queue load) and tracks **SLA deadlines on real business calendars**. Python 3.11/3.12, SQLite, Pandas, Streamlit, Plotly, Pytest. No paid APIs.
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+
+## View the dashboard
+
+This application is a Python Streamlit server, not a static website. GitHub Pages therefore displays repository files such as this README and cannot run `app.py`.
+
+To deploy the interactive dashboard:
+
+1. Open [Streamlit Community Cloud](https://share.streamlit.io/).
+2. Sign in with the GitHub account that owns this repository.
+3. Select **Create app**.
+4. Choose repository `Kanyaraashi/Intelligent_Ticket-Routing-SLA-System`, branch `main`, and main file path `app.py`.
+5. Deploy the app.
+6. Replace the placeholder Streamlit badge link above with the public application URL after deployment.
+
 ## Why it matters
 Wrong routing, overloaded agents, missed deadlines and ticket ping-pong cost money and customers. This project demonstrates a deterministic, auditable alternative with full history and automatic anomaly detection.
 
